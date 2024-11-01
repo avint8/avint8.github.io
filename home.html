@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Oviyashristy - Arts and Crafts School</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header and Carousel Section -->
+    <header>
+        <div class="carousel">
+            <div class="slides">
+                <img src="static/img1.jpeg" alt="Art 1">
+                <img src="static/static1 (2).jpeg" alt="Art 2">
+                <img src="static/static1 (3).jpeg" alt="Art 3">
+                <img src="static/static1 (6).jpeg" alt="Art 4">
+                <img src="static/static1 (4).jpeg" alt="Art 5">
+            </div>
+        </div>
+    </header>
+
+    <!-- Mid Section with Student Art -->
+    <section id="student-art">
+        <h2>Student Artwork</h2>
+        <div class="art-gallery">
+            <img src="static/img1.jpeg" alt="Student Art 1" onclick="enlargeImage(this)">
+            <img src="static/static1 (2).jpeg" alt="Student Art 2" onclick="enlargeImage(this)">
+            <img src="static/static1 (3).jpeg" alt="Student Art 3" onclick="enlargeImage(this)">
+            <img src="static/static1 (4).jpeg" alt="Student Art 4" onclick="enlargeImage(this)">
+            <img src="static/static1 (4).jpeg" alt="Student Art 5" onclick="enlargeImage(this)">
+            <img src="static/static1 (4).jpeg" alt="Student Art 6" onclick="enlargeImage(this)">
+            <img src="static/static1 (4).jpeg" alt="Student Art 7" onclick="enlargeImage(this)">
+        </div>
+    </section>
+
+    <!-- Modal for Enlarging Images -->
+    <div id="imageModal" class="modal" onclick="closeModal(event)">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="enlargedImg">
+    </div>
+
+    <!-- About Us Section -->
+    <footer>
+        <section id="about-us">
+            <h2>About Us</h2>
+            <p>Oviyashristy is a renowned arts and crafts school offering a wide range of creative programs for students aged 2 to 17, as well as adults. We have been running for over 20 years, teaching everything from drawing, painting, and murals to the traditional art of Tanjore. Our structured curriculum takes students from beginner to advanced levels, with grade exams ranging from Grade 1 to Grade 8.</p>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
