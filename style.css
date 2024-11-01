@@ -90,12 +90,22 @@ header {
     color: #bbb;
 }
 
-/* Gallery Image Styles */
+.art-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Adds space between the images */
+}
+
 .art-gallery img {
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-    object-fit: cover;
+    width: 150px;  /* Set a smaller width for the images */
+    height: 150px; /* Set a smaller height for the images */
+    object-fit: cover; /* Ensures that the image maintains aspect ratio and covers the entire container */
     border-radius: 10px;
     cursor: pointer; /* Make it clear the images are clickable */
+    transition: transform 0.3s ease; /* Adds a smooth transition for hover effect */
+}
+
+.art-gallery img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
 }
